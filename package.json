@@ -4,7 +4,7 @@
   "description": "Simple API for nyoba-svelte website.",
   "main": "./dist/app.js",
   "scripts": {
-    "prebuild": "rm -rf dist",
+    "vercel-build": "prisma generate && prisma migrate deploy && tsc",
     "build": "tsc",
     "prisma:generate": "prisma generate",
     "prestart": "prisma migrate deploy",
