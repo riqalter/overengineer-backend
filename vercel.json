@@ -1,8 +1,8 @@
 {
     "version": 2,
-    "buildCommand": "prisma generate && prisma migrate deploy",
     "builds": [
         {
+            "buildCommand": "prisma generate && prisma migrate deploy",
             "src": "api/index.ts",
             "use": "@vercel/node"
         }
