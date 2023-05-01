@@ -84,21 +84,13 @@ fastify.get("/data", async (req: FastifyRequest, res: FastifyReply) => {
         name: "Animeriq V1",
         description:
           "Anime website for people who love anime. I built this website with ReactJS and Axios for search webscraper",
-        stack: [
-          "yarn",
-          "Git",
-          "Visual Studio Code",
-          "JavaScript",
-          "react",
-          "material-ui",
-        ],
+        stack: ["yarn", "Git", "Visual Studio Code", "JavaScript", "react", "material-ui"],
         emoji: "👀",
         url: "https://anime.mikailthoriq.eu.org/",
       },
       {
         name: "Anime V2 Rev3",
-        description:
-          "same as before but more refined",
+        description: "same as before but more refined",
         stack: [
           "yarn",
           "Visual Studio Code",
@@ -121,39 +113,21 @@ fastify.get("/data", async (req: FastifyRequest, res: FastifyReply) => {
         name: "image-condom",
         description:
           "A simple image compression and resizing tool using the Sharp JavaScript library to perform operations such as compression, resizing, and on-the-fly processing of images.",
-        stack: [
-          "yarn",
-          "Git",
-          "Visual Studio Code",
-          "Sharp",
-          "express",
-          "request",
-          "basic-auth",
-          "JavaScript",
-        ],
+        stack: ["yarn", "Git", "Visual Studio Code", "Sharp", "express", "request", "basic-auth", "JavaScript"],
         emoji: "🖼️",
       },
       {
         name: "Weatheriq",
         description:
           "Very useful application for hosting and easy to manage your files in S3 buckets. You can upload, delete or search your files just using the interface application.",
-        stack: [
-          "pnpm",
-          "Git",
-          "Visual Studio Code",
-          "babel",
-          "sass",
-          "bootstrap",
-          "npm [In the past]",
-        ],
+        stack: ["pnpm", "Git", "Visual Studio Code", "babel", "sass", "bootstrap", "npm [In the past]"],
         emoji: "⛅",
         url: "https://weather.mikailthoriq.eu.org",
         github: "https://github.com/thq642/weather-webapp",
       },
       {
         name: "nexgenmyidV4",
-        description:
-          "Source code of my personal website.",
+        description: "Source code of my personal website.",
         stack: [
           "Git",
           "Visual Studio Code",

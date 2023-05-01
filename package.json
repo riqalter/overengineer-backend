@@ -2,13 +2,13 @@
   "name": "api-nyoba-svelte",
   "version": "1.1.0",
   "description": "Simple API for nyoba-svelte website.",
-  "main": "./dist/app.js",
+  "main": "./api/index.js",
   "scripts": {
     "vercel-build": "prisma generate && prisma migrate deploy && tsc",
     "build": "tsc",
-    "prisma:generate": "prisma generate",
-    "prestart": "prisma migrate deploy",
-    "start": "node ./dist/app.js",
+    "prestart": "prisma generate && prisma migrate deploy",
+    "start": "vercel dev",
+    "deploy": "vercel deploy --prod",
     "dev": "nodemon"
   },
   "engines": {
@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
+    "vercel": "^28.20.0",
     "@types/source-map-support": "^0.5.6",
     "nodemon": "^2.0.20",
     "prettier": "^2.8.3",
