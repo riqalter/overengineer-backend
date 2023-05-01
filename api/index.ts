@@ -1,5 +1,5 @@
 import cors from "@fastify/cors";
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "../node_modules/.prisma/client";
 import dotenv from "dotenv";
 import Fastify, { FastifyReply, FastifyRequest } from "fastify";
 import "source-map-support/register";
