@@ -49,7 +49,7 @@ fastify.get("/data", async (req: FastifyRequest, res: FastifyReply) => {
       "Node.js",
     ],
 
-    languages: ["TypeScript", "JavaScript", "Python*", "Go*"],
+    languages: ["TypeScript", "JavaScript", "Python", "Go*", "Rust*", "Java*"],
 
     socialLinks: [
       {
@@ -118,8 +118,7 @@ fastify.get("/data", async (req: FastifyRequest, res: FastifyReply) => {
       },
       {
         name: "Weatheriq",
-        description:
-          "Very useful application for hosting and easy to manage your files in S3 buckets. You can upload, delete or search your files just using the interface application.",
+        description: "A simple weather app using OpenWeatherMap API.",
         stack: ["pnpm", "Git", "Visual Studio Code", "babel", "sass", "bootstrap", "npm [In the past]"],
         emoji: "⛅",
         url: "https://weather.mikailthoriq.eu.org",
