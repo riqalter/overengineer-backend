@@ -1,16 +1,16 @@
 {
     "version": 2,
-    "buildCommand": "prisma generate && prisma migrate deploy && tsc",
     "builds": [
         {
-            "src": "dist/api.js",
+            "buildCommand": "prisma generate && prisma migrate deploy && tsc",
+            "src": "dist/app.ts",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "dist/api.js"
+            "dest": "dist/app.js"
         }
     ]
 }
