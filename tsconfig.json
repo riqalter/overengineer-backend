@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
+    "outDir": "./public/",
     "target": "ESNext",
     "module": "commonjs",
     "inlineSourceMap": true,
