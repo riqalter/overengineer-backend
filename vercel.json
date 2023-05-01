@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "buildCommand": "prisma generate && prisma migrate deploy && tsc",
     "builds": [
         {
             "src": "dist/api.js",
