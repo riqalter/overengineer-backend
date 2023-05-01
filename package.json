@@ -2,7 +2,7 @@
   "name": "api-nyoba-svelte",
   "version": "1.1.0",
   "description": "Simple API for nyoba-svelte website.",
-  "main": "./api/index.js",
+  "main": "./api/index.ts",
   "scripts": {
     "prestart": "prisma generate && prisma migrate deploy",
     "start": "vercel dev",

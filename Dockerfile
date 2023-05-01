@@ -5,16 +5,16 @@ RUN apt-get install build-essential libcairo2-dev libpango1.0-dev libjpeg-dev li
 
 WORKDIR /app
 
-RUN npm i -g pnpm
+RUN npm i -g yarn
 
-COPY package.json pnpm-lock.yaml .npmrc ./
+COPY package.json yarn.lock .npmrc ./
 
-RUN pnpm install
+RUN yarn 
 
 COPY . /app
 COPY prisma/ ./prisma
 
 RUN pnpm prisma generate
-RUN pnpm build
+RUN pnpm tsc
 
-CMD ["pnpm", "start"]
+CMD ["node", "./public/index.js"]
