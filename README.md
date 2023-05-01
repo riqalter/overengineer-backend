@@ -14,11 +14,8 @@ express? nope.
 # install dependencies
 npm install
 
-# generate prisma
-npm run prisma:generate
-
-# migrate prisma
-npm run prestart
+# setup prisma orm
+npm run vercel-build
 
 # start dev server
 npm run dev
